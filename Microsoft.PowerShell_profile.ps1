@@ -1,8 +1,18 @@
 ﻿#Import-Module dbatools
 $host.ui.rawui.BackgroundColor = "DarkGray"
-Set-PSReadlineOption -TokenKind Parameter -Foregroundcolor Gray
-Set-PSReadlineOption -TokenKind Operator -Foregroundcolor Gray
-Set-PSReadlineOption -TokenKind String -Foregroundcolor Cyan
+
+Set-PSReadLineOption -colors @{
+    Command            = 'Gray'
+    Number             = 'Gray'
+    Member             = 'Gray'
+    Operator           = 'Gray'
+    Type               = 'Gray'
+    Variable           = 'Gray'
+    Parameter          = 'Gray'
+    ContinuationPrompt = 'Gray'
+    Default            = 'Gray'
+    String             = 'Cyan'
+  }
 
 Import-Module posh-git
 
