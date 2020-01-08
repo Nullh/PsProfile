@@ -1,5 +1,7 @@
 ﻿#Import-Module dbatools
 $host.ui.rawui.BackgroundColor = "DarkGray"
+$host.ui.rawui.ForegroundColor = "Gray"
+
 
 Set-PSReadLineOption -colors @{
     Command            = 'Green'
@@ -13,7 +15,6 @@ Set-PSReadLineOption -colors @{
     Default            = 'Gray'
     String             = 'Cyan'
   }
-
 
 
 #function Prompt {
@@ -114,7 +115,7 @@ $GitPromptSettings.BeforeStatus.ForegroundColor = [ConsoleColor]::Blue
 $GitPromptSettings.BranchColor.ForegroundColor = [ConsoleColor]::White
 $GitPromptSettings.BranchGoneStatusSymbol.ForegroundColor = [ConsoleColor]::Blue
 $GitPromptSettings.BranchIdenticalStatusSymbol.ForegroundColor = [ConsoleColor]::Blue
-$GitPromptSettings.DefaultColor.ForegroundColor = [ConsoleColor]::Black
+$GitPromptSettings.DefaultColor.ForegroundColor = [ConsoleColor]::Gray
 $GitPromptSettings.DelimStatus.ForegroundColor = [ConsoleColor]::Blue
 $GitPromptSettings.IndexColor.ForegroundColor = [ConsoleColor]::Cyan
 $GitPromptSettings.WorkingColor.ForegroundColor = [ConsoleColor]::Yellow
